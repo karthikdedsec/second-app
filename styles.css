@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --color-primary: #d9d9d9;
+  --color-primary-dark: #648286;
+  --color-secondary: #f2e16d;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media (max-width: 1360px) {
+  html {
+    font-size: 40.5%;
+  }
+}
+@media (max-width: 950px) {
+  html {
+    font-size: 37.5%;
+  }
+}
+@media (max-width: 678px) {
+  html {
+    font-size: 32.5%;
+  }
+}
+
+body {
+  font-family: "Montserrat", serif;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+  padding-top: 5rem;
+}
+
+.nav-full {
+  background-color: rgba(100, 130, 134, 0.2);
+}
+
+.navigation__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+.navigation__container ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+@media (max-width: 678px) {
+  .navigation__container ul {
+    display: none;
+  }
+}
+.navigation__container ul li a {
+  text-decoration: none;
+  color: black;
+}
+.navigation__container .navigation__image {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 50%;
+  right: -6rem;
+  transform: translate(0, -50%);
+}
+@media (max-width: 678px) {
+  .navigation__container .navigation__image {
+    right: 0;
+  }
+}
+
+.title-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.title-box {
+  max-width: 50rem;
+  position: absolute;
+  top: 30%;
+  right: 25%;
+  transform: translate(0, -50%);
+}
+@media (max-width: 678px) {
+  .title-box {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+.title-box > * {
+  margin: 2rem 0;
+}
+
+.title {
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sub-title {
+  margin-top: -2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Montserrat", serif;
+  color: var(--color-primary-dark);
+  letter-spacing: 1rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: black;
+}
+
+.header {
+  position: relative;
+}
+
+.vector {
+  position: absolute;
+  z-index: -1;
+}
+
+.vector.vector-1 {
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+}
+
+.vector.vector-2 {
+  bottom: 0;
+  right: 0;
+  width: 70%;
+}
+
+.vector.vector-3 {
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.geographical {
+  position: absolute;
+}
+
+.geographical.circle-end {
+  bottom: 0;
+  left: 30rem;
+  width: 20rem;
+}
+
+@media (max-width: 678px) {
+  .geographical.circle-end {
+    left: 7rem;
+  }
+}
+
+.geographical.cross {
+  bottom: 3rem;
+  left: 50rem;
+  width: 3rem;
+}
+@media (max-width: 678px) {
+  .geographical.cross {
+    left: 22rem;
+  }
+}
+.geographical.circle-right {
+  top: 12rem;
+  right: 0;
+  width: 10rem;
+}
+
+.geographical.triangle-sm {
+  top: 27rem;
+  right: 0;
+  width: 7rem;
+}
+
+.geographical.cross-r {
+  top: 35rem;
+  right: 3rem;
+  width: 3rem;
+  transform: rotate(20deg);
+}
+
+.geographical.triangle-t {
+  top: 15rem;
+  left: 43rem;
+  width: 9rem;
+  transform: rotate(70deg);
+}
+
+.geographical.triangle-t {
+  top: 15rem;
+  left: 43rem;
+  width: 9rem;
+  transform: rotate(70deg);
+}
+@media (max-width: 678px) {
+  .geographical.triangle-t {
+    left: 2rem;
+  }
+}
+.geographical.triangle-b {
+  top: 18rem;
+  left: 51rem;
+  width: 6rem;
+  transform: rotate(0deg);
+}
+@media (max-width: 678px) {
+  .geographical.triangle-b {
+    left: 12rem;
+  }
+}
+
+.geographical.cross-d {
+  top: 12rem;
+  right: 14rem;
+  width: 3rem;
+  transform: rotate(0deg);
+}
+.geographical.triangle-d {
+  bottom: 7rem;
+  left: 29%;
+  width: 6rem;
+  transform: rotate(-70deg);
+}
+
+@media (max-width: 678px) {
+  .geographical.triangle-d {
+    left: 12rem;
+  }
+}
+
+.geographical.object-1 {
+  top: 5.5rem;
+  left: 10%;
+  width: 19rem;
+}
+.geographical.object-sm {
+  bottom: 2rem;
+  right: 26rem;
+  width: 7rem;
+}
+.geographical.object-xs {
+  bottom: 9rem;
+  right: 3rem;
+  width: 4rem;
+}
+
+.readmore-btn {
+  text-decoration: none;
+  background-color: #f9eea6;
+  color: black;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.readmore-btn::after {
+  content: "Read More";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #648286;
+  z-index: 1;
+  color: black;
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+}
+
+.readmore-btn:hover:after {
+  transform: translateY(0);
+}
+
+.hamburger-btn {
+  display: none;
+  border: none;
+  background-color: transparent;
+  font-size: 5rem;
+  margin-right: 9rem;
+}
+
+@media (max-width: 678px) {
+  .hamburger-btn {
+    display: inline-block;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 50vw;
+  background-color: #648286;
+  transform: translateX(-120%);
+  transition: all 0.8s;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  font-size: 4rem;
+  margin-top: 18rem;
+}
+.sidebar ul li {
+  margin: 5rem 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+}
