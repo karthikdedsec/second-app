@@ -64,11 +64,23 @@ h5 {
 }
 .navigation__container ul {
   display: flex;
-  gap: 2rem;
+  gap: 6rem;
   list-style-type: none;
+  align-items: center;
   font-size: 1.6rem;
   margin: 0;
-  padding: 1rem 0;
+  height: 5rem;
+  font-weight: 500;
+}
+.navigation__container ul li {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0 1.5rem;
+}
+.navigation__container ul li:hover {
+  background-color: #bfc7ca;
 }
 
 @media (max-width: 678px) {
@@ -103,8 +115,8 @@ h5 {
 .title-box {
   max-width: 50rem;
   position: absolute;
-  top: 30%;
-  right: 25%;
+  top: 36%;
+  right: 12%;
   transform: translate(0, -50%);
 }
 @media (max-width: 678px) {
@@ -119,15 +131,16 @@ h5 {
 }
 
 .title {
-  font-size: 8rem;
+  font-size: 7rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
+  color: black;
 }
 
 .sub-title {
   margin-top: -2rem;
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 2.2rem;
+  font-weight: 700;
   text-transform: uppercase;
   font-family: "Montserrat", serif;
   color: var(--color-primary-dark);
@@ -138,6 +151,8 @@ h5 {
   font-size: 1.6rem;
   font-weight: 500;
   color: black;
+  margin-top: 6rem;
+  padding-right: 11rem;
 }
 
 .header {
@@ -152,21 +167,38 @@ h5 {
 .vector.vector-1 {
   top: 0;
   left: 0;
-  width: 30%;
+  width: 60rem;
   height: 100%;
 }
 
 .vector.vector-2 {
   bottom: 0;
-  right: 0;
-  width: 70%;
+  right: -1rem;
+  width: 45%;
+  height: auto;
+  object-fit: cover;
 }
 
 .vector.vector-3 {
   bottom: 0;
   right: 0;
-  width: 50%;
-  height: 100%;
+  width: 50rem;
+  height: 55rem;
+  filter: opacity(0.6);
+}
+
+.vector.vector-4 {
+  top: 0;
+  right: 30rem;
+  height: 40rem;
+}
+
+@media (max-width: 640px) {
+  .vector.vector-4 {
+    top: 0;
+    right: 5rem;
+    height: 35rem;
+  }
 }
 
 .geographical {
@@ -175,7 +207,7 @@ h5 {
 
 .geographical.circle-end {
   bottom: 0;
-  left: 30rem;
+  left: 38rem;
   width: 20rem;
 }
 
@@ -187,7 +219,7 @@ h5 {
 
 .geographical.cross {
   bottom: 3rem;
-  left: 50rem;
+  left: 59rem;
   width: 3rem;
 }
 @media (max-width: 678px) {
@@ -198,17 +230,17 @@ h5 {
 .geographical.circle-right {
   top: 12rem;
   right: 0;
-  width: 10rem;
+  width: 16rem;
 }
 
 .geographical.triangle-sm {
-  top: 27rem;
+  top: 37rem;
   right: 0;
   width: 7rem;
 }
 
 .geographical.cross-r {
-  top: 35rem;
+  top: 45rem;
   right: 3rem;
   width: 3rem;
   transform: rotate(20deg);
@@ -223,7 +255,7 @@ h5 {
 
 .geographical.triangle-t {
   top: 15rem;
-  left: 43rem;
+  left: 57rem;
   width: 9rem;
   transform: rotate(70deg);
 }
@@ -233,8 +265,8 @@ h5 {
   }
 }
 .geographical.triangle-b {
-  top: 18rem;
-  left: 51rem;
+  top: 19rem;
+  left: 64rem;
   width: 6rem;
   transform: rotate(0deg);
 }
@@ -252,7 +284,7 @@ h5 {
 }
 .geographical.triangle-d {
   bottom: 7rem;
-  left: 29%;
+  left: 35%;
   width: 6rem;
   transform: rotate(-70deg);
 }
@@ -265,12 +297,12 @@ h5 {
 
 .geographical.object-1 {
   top: 5.5rem;
-  left: 10%;
+  left: 28%;
   width: 19rem;
 }
 .geographical.object-sm {
   bottom: 2rem;
-  right: 26rem;
+  right: 20rem;
   width: 7rem;
 }
 .geographical.object-xs {
@@ -291,6 +323,7 @@ h5 {
   z-index: 2;
   overflow: hidden;
   display: inline-block;
+  margin-top: 0;
 }
 
 .readmore-btn::after {
@@ -337,6 +370,29 @@ h5 {
   background-color: #648286;
   transform: translateX(-120%);
   transition: all 0.8s;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 4%;
+  right: 2%;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.social-icons a {
+  background-color: #a9c6c8;
+  font-size: 1.5rem;
+  color: #fbfbfb;
+  text-decoration: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar ul {
