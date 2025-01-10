@@ -16,12 +16,18 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 65.5%;
+}
+
+@media (max-width: 2000px) {
+  html {
+    font-size: 65.5%;
+  }
 }
 
 @media (max-width: 1360px) {
   html {
-    font-size: 40.5%;
+    font-size: 50.5%;
   }
 }
 @media (max-width: 950px) {
@@ -38,7 +44,7 @@ html {
 body {
   font-family: "Montserrat", serif;
   overflow: hidden;
-  max-width: 1560px;
+  /* max-width: 1560px; */
   margin: 0 auto;
   overflow-x: hidden;
 }
