@@ -38,6 +38,9 @@ html {
 body {
   font-family: "Montserrat", serif;
   overflow: hidden;
+  max-width: 1560px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 h1,
