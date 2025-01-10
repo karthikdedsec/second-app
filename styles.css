@@ -148,11 +148,13 @@ h5 {
 }
 
 .description {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: black;
   margin-top: 6rem;
-  padding-right: 11rem;
+  padding-right: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
 }
 
 .header {
@@ -407,4 +409,9 @@ h5 {
 .sidebar ul li a {
   text-decoration: none;
   color: white;
+}
+
+.uppercase {
+  font-size: 1.9rem;
+  font-weight: bold;
 }
