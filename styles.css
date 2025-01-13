@@ -227,6 +227,8 @@ h5 {
   bottom: 0;
   left: 38rem;
   width: 20rem;
+  transform-origin: bottom center;
+  animation: spin 15s linear infinite;
 }
 
 @media (max-width: 678px) {
@@ -239,6 +241,7 @@ h5 {
   bottom: 3rem;
   left: 59rem;
   width: 3rem;
+  animation: float 30s linear infinite;
 }
 @media (max-width: 678px) {
   .geographical.cross {
@@ -249,12 +252,15 @@ h5 {
   top: 12rem;
   right: 0;
   width: 16rem;
+  transform-origin: right center;
+  animation: spin-2 15s linear infinite;
 }
 
 .geographical.triangle-sm {
   top: 37rem;
   right: 0;
   width: 7rem;
+  animation: spin 30s linear infinite;
 }
 
 .geographical.cross-r {
@@ -262,6 +268,7 @@ h5 {
   right: 3rem;
   width: 3rem;
   transform: rotate(20deg);
+  animation: float 25s linear infinite;
 }
 
 .geographical.triangle-t {
@@ -276,6 +283,7 @@ h5 {
   left: 57rem;
   width: 9rem;
   transform: rotate(70deg);
+  animation: spin 20s linear infinite;
 }
 @media (max-width: 678px) {
   .geographical.triangle-t {
@@ -287,6 +295,7 @@ h5 {
   left: 64rem;
   width: 6rem;
   transform: rotate(0deg);
+  animation: spin-2 30s linear infinite;
 }
 @media (max-width: 678px) {
   .geographical.triangle-b {
@@ -299,12 +308,14 @@ h5 {
   right: 14rem;
   width: 3rem;
   transform: rotate(0deg);
+  animation: float-2 20s linear infinite;
 }
 .geographical.triangle-d {
   bottom: 7rem;
   left: 35%;
   width: 6rem;
   transform: rotate(-70deg);
+  animation: spin-float 10s linear infinite;
 }
 
 @media (max-width: 678px) {
@@ -317,16 +328,19 @@ h5 {
   top: 5.5rem;
   left: 28%;
   width: 19rem;
+  animation: scale 20s linear infinite;
 }
 .geographical.object-sm {
   bottom: 2rem;
   right: 20rem;
   width: 7rem;
+  animation: scale 15s linear infinite;
 }
 .geographical.object-xs {
   bottom: 9rem;
   right: 3rem;
   width: 4rem;
+  animation: scale 15s linear infinite;
 }
 
 .readmore-btn {
@@ -430,4 +444,76 @@ h5 {
 .uppercase {
   font-size: 1.9rem;
   font-weight: bold;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin-float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-50px) rotate(-180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-360deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
