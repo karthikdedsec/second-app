@@ -356,7 +356,7 @@ header {
   font-size: 1.2rem;
   font-weight: 600;
   position: relative;
-  z-index: 2;
+  z-index: 999;
   overflow: hidden;
   display: inline-block;
   margin-top: 0;
