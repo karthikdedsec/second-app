@@ -429,10 +429,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.5s;
+  transition: all 0.5s;
 }
 .social-icons a:hover {
   transform: scale(1.1);
+  background-color: white;
+  color: #648286;
 }
 
 .sidebar ul {
