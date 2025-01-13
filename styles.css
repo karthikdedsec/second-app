@@ -53,7 +53,6 @@ body {
   overflow: hidden;
   /* max-width: 1560px; */
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 h1,
@@ -62,6 +61,10 @@ h3,
 h4,
 h5 {
   font-family: "Arial-regular", sans-serif;
+}
+
+header {
+  overflow: hidden;
 }
 
 .navigation {
