@@ -426,6 +426,10 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s;
+}
+.social-icons a:hover {
+  transform: scale(1.1);
 }
 
 .sidebar ul {
